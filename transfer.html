@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfer Amount</title>
+    <link rel="icon" href="./img/640.png">
+    <link rel="stylesheet" href="./style2.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            
+        }
+
+        .container {
+            max-width: 700px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            margin-top: -470px;
+        }
+
+        .form-title {
+            background-color: #0033a0;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+        }
+
+        .btn-primary {
+            background-color: #0033a0;
+            border-color: #0033a0;
+            margin-top: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #00297c;
+            border-color: #00297c;
+        }
+        .form-check-label{
+            margin: 0;
+
+        }
+
+        .form-check-label a {
+            color: #0033a0;
+           
+            text-decoration: underline;
+            
+        }
+
+        .form-check-label a:hover {
+            text-decoration: none;
+        }
+
+        .btn-group {
+            display: flex;         
+            justify-content: space-between;
+        }
+       
+
+        @media (max-width: 600px) {
+            .btn-group {
+                flex-direction: column;
+            }
+
+            .btn-group button {
+                margin-bottom: 10px;
+            }
+            .container {
+                 
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="./img/640.png" alt="SBI Logo" class="logo">
+            <div class="header-links">
+                <a href="#">What's New</a>
+                <a href="#">About OnlineSBI</a>
+                <a href="#">Registration Forms</a>
+                <div class="language-selector">
+                    <select>
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                </div>
+                <a href="index.html" class="logout">Logout</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="account.html">My Accounts & Profile</a></li>
+                <li><a href="#">Payments / Transfers</a></li>
+                <li><a href="#">Bill Payments</a></li>
+                <li><a href="#">Deposit & Investment</a></li>
+                <li><a href="#">e-Tax</a></li>
+                <li><a href="#">e-Services</a></li>
+                <li><a href="#">Request & Enquiries</a></li>
+                <li><a href="#">Useful Links</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="welcome-container-fluid d-flex">
+        <div class="welcome-section mt-1">
+            <p>Last Login Date & Time</p>
+            <p>05-Aug-2024 [09:25 PM IST]</p>
+            <a href="#">View Profile Status</a>
+        </div>
+        
+        <div class="welcome-section mt-1" >
+            <p>Yuvaraja M</p>
+            <P>yuvar1018@gmail.com</P>
+        </div>
+
+    </div>
+    
+    
+    <aside class="sidebar">
+        <div class="quick-links">
+            <p>Quick Links</p>
+            <ul>
+                
+                <li><a href="account.html">Account Summary</a></li>
+                <li><a href="statment.html">Account Statement</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="e-statement.html">e-Statement</a></li>
+                <li><a href="pending.html">Pending Statement</a></li>
+                <li><a href="loan.html">Loan</a></li>
+                <li><a href="transfer.html">Transfer of Savings Account</a></li>
+                
+             </ul>
+        </div>
+    </aside>
+ 
+
+
+
+
+    <div class="container">
+        <div class="form-title">
+            <h4>Transfer of Savings Account</h4>
+        </div>
+    
+        <form id="trans">
+            <div class="form-group">
+                <label for="accountNumber">Select the Account</label>
+                <select class="form-control" id="accountNumber">
+                    <option value="0000005 - Savings Account - NOIDA">0000005 - Savings Account - NOIDA</option>
+                    <option value="0000004039334952">0000004039334952</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label for="branchCode">Branch Code</label>
+                <input type="text" class="form-control" id="branchCode" placeholder="Enter 5-Digit Branch Code">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" class="form-control" id="amount" placeholder="Enter The Amount">
+            </div>
+        
+            <div class="form-group">
+                <label for="branchName">Branch Name</label>
+                <input type="text" class="form-control" id="branchName" placeholder="Enter Branch Name">
+                <button type="button" class="btn btn-primary mt-2">Get Branch Name</button>
+            </div>
+        
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="termsAndConditions">
+                <label class="form-check-label" for="termsAndConditions">
+                    I accept the <a href="#">Terms and Conditions</a>
+                </label>
+            </div>
+        
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+        </form>
+        
+        <script>
+            document.getElementById('trans').addEventListener('submit', function(event) {
+                event.preventDefault();
+            
+                var account = document.getElementById('accountNumber').value;
+                var amount = document.getElementById('amount').value;
+                var branch = document.getElementById('branchName').value;
+            
+                alert('Your account number is: ' + account + '\nYour payment: ' + amount + '\nYour Branch name is: ' + branch +'\n Your Amount to send. ');
+                window.location.href='transfer.html';
+            });
+        </script>
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+</body>
+</html>
